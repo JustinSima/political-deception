@@ -1,0 +1,5 @@
+conda install pytorch torchvision torchaudio
+conda install -c huggingface transformers
+conda install -c huggingface -c conda-forge datasets
+conda install matplotlib
+conda install scikit-learn
