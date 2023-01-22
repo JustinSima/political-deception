@@ -131,9 +131,6 @@ class DolosTrainer:
                 nb_tr_examples += batch_sequences.size(0)
                 nb_tr_steps += 1
 
-                # REMOVE.
-                break
-
             time_elapsed = datetime.datetime.now() - time_start
 
             # Evaluate each epoch.
@@ -153,10 +150,6 @@ class DolosTrainer:
                     val_loss += batch_val_loss.item()
                     val_accuracy += batch_val_accuracy
                     n_val_steps += 1
-
-
-                    # REMOVE.
-                    break
             
             len_train = len(self.train_dataloader)
             len_val = len(self.validation_dataloader)
@@ -207,8 +200,6 @@ class DolosTrainer:
             np_labels = batch_labels.to('cpu').numpy()
             preds.append(logits)
             true_state.append(np_labels)
-
-            break
 
         flattened_predictions = [item for sublist in preds for item in sublist]
         flat_predictions = np.argmax(flattened_predictions, axis=1).flatten()
