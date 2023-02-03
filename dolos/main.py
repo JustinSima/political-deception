@@ -1,4 +1,4 @@
-""" Run training pipeline for Dolos model and save to instance EBS.
+""" Run training pipeline for Dolos model and save.
 """
 import pathlib
 
