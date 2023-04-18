@@ -1,0 +1,6 @@
+pytorch
+torchvision
+torchaudio
+huggingface::transformers
+datasets
+scikit-learn
