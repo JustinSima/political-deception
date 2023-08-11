@@ -2,7 +2,6 @@
 """
 import pathlib
 
-from model import Dolos
 from training import DolosTrainer
 
 
